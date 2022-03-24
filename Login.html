@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SAFOAM | Login Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+      
+
+h1 {
+  font-weight: bold;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+}
+
+span {
+  font-size: 12px;
+}
+
+a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+.btn1 {
+  border-radius: 20px;
+  border: 1px solid #ff4b2b;
+  background-color: #ff4b2b;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+.btn1:active {
+  transform: scale(0.95);
+}
+
+.btn1:focus {
+  outline: none;
+}
+
+.btn1.ghost {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
+.form1{
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
+}
+
+ .input1 {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.container1 {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+
+.form-container1 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container1 {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.container1 .right-panel-active .sign-in-container1 {
+  transform: translateX(100%);
+}
+
+.sign-up-container1 {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.container1 .right-panel-active .sign-up-container1 {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+  animation: show 0.6s;
+}
+
+@keyframes show {
+  0%,
+  49.99% {
+    opacity: 0;
+    z-index: 1;
+  }
+
+  50%,
+  100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}
+
+.overlay1-container1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+.container1 .right-panel-active .overlay1-container1 {
+  transform: translateX(-100%);
+}
+
+.overlay1 {
+  background: #ff416c;
+  background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  color: #ffffff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.container1 .right-panel-active .overlay1 {
+  transform: translateX(50%);
+}
+
+.overlay1-panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.overlay1-left {
+  transform: translateX(-20%);
+}
+
+.container1 .right-panel-active .overlay1-left {
+  transform: translateX(0);
+}
+
+.overlay1-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.container1 .right-panel-active .overlay1-right {
+  transform: translateX(20%);
+}
+
+.social-container1 {
+  margin: 20px 0;
+}
+
+.social-container1 a {
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+}
+
+    </style>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">SOFOAM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+  
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <!-- <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="event.html" class="nav-link">Events</a></li> -->
+            <li class="nav-item"><a href="Default.html" class="nav-link">ABOUT SAFOAM</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Default.html" role="button" aria-expanded="false">SAR</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="Default.html" target="_blank">Chapter of SAFOAM</a>
+                <a class="dropdown-item" href="Default.html" target="_blank">Agroclimatic Research</a>
+                <a class="dropdown-item" href="Default.html" target="_blank">Tools for Operational Agro</a>
+                <a class="dropdown-item" href="Default.html" target="_blank">Economic Assessment of AAS</a>
+                <a class="dropdown-item" href="Default.html" target="_blank">Publication/Books</a>
+                <!-- <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div> -->
+            </li><li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Default.html" role="button" aria-expanded="false">STANDARD AGROMET ADVISORIES</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="Default.html" target="_blank">Flood</a>
+                <a class="dropdown-item" href="Default.html" target="_blank">Cyclone</a>
+                <a class="dropdown-item" href="Default.html" target="_blank">Heavy Rain</a>
+                <a class="dropdown-item" href="Default.html" target="_blank">Cold</a>
+                <a class="dropdown-item" href="Default.html" target="_blank">Heat Waves</a>
+                <a class="dropdown-item" href="Default.html" target="_blank">Hailstrom</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Default.html" role="button" aria-expanded="false">AWARD OF FELLOWSHIPS</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="Default.html" target="_blank">Proposed Activities 2021-22</a>
+                <a class="dropdown-item" href="Default.html" target="_blank">Proposed Activities 2022-23</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Default.html" role="button" aria-expanded="false">FAQ</a>
+            </li>
+            <!-- <li class="nav-item"><a href="blog.html" class="nav-link"></a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link"></a></li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+    
+    <div class="hero-wrap" style="background-image: url('images/bg_7.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+             <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="index.html">Home</a></span> <span>Login</span></p>
+            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Login Page</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="" style="">
+      <section class="ftco-section">
+    	<div class="container">
+    		<div class="row d-flex">
+    			<div class="col-md-12 pl-md-5 ftco-animate">
+              <div class="container1" style="width: 100%;" id="container">
+                <div class="form-container1 sign-up-container1">
+                  <form action="#" class="form1">
+                    <h1>Create Account</h1>
+                    <div class="social-container1">
+                      <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                      <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your email for registration</span>
+                    <input type="text" class="input1" placeholder="Name" />
+                    <input type="email" class="input1" placeholder="Email" />
+                    <input type="password" class="input1" placeholder="Password" />
+                    <button class="btn1">Sign Up</button>
+                  </form>
+                </div>
+                <div class="form-container1 sign-in-container1">
+                  <form action="#" class="form1">
+                    <h1>Sign in</h1>
+                    <div class="social-container1">
+                      <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                      <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your account</span>
+                    <input type="email" class="input1" placeholder="Email" />
+                    <input type="password" class="input1" placeholder="Password" />
+                    <a href="#">Forgot your password?</a>
+                    <button class="btn1">Sign In</button>
+                  </form>
+                </div>
+                <div class="overlay1-container1">
+                  <div class="overlay1">
+                    <div class="overlay1-panel overlay1-left">
+                      <h1>Welcome Back!</h1>
+                      <p>To keep connected with us please login with your personal info</p>
+                      <button class="btn1 ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay1-panel overlay1-right">
+                      <h1>Hello, Friend!</h1>
+                      <p>Enter your personal details and start journey with us</p>
+                      <button class="btn1 ghost" id="signUp" onclick="handleSignUpBtn();">Sign Up</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    			</div>
+    		</div>
+    	</div>
+      </section>
+    </div>
+    <!-- footer  -->
+    <footer class="ftco-footer ftco-section img">
+    	<div class="overlay"></div>
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-3">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">About Us</h2>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Recent Blog</h2>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+             <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Site Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">SAFOAM NAVIGATION</a></li>
+                <li><a href="#" class="py-2 d-block">SAR</a></li>
+                <li><a href="#" class="py-2 d-block">STANDARD AGROMET ADVISORIES</a></li>
+                <li><a href="#" class="py-2 d-block">AWARD OF FELLOWSHIPS</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Pune, India</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91 1111111111</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p> Designed by Harsh Chauhan & Abhishek Panat <a href="#" target="_blank"></a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript">
+    const signUpButton = document.getElementById("signUp");
+    const signInButton = document.getElementById("signIn");
+    const container = document.getElementById("container");
+
+    signUpButton.addEventListener("click", function(){
+      container.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener("click", function (){
+      container.classList.remove("right-panel-active");
+    });
+
+    function handleSignUpBtn()
+    {
+      // alert('hi');
+      const container = document.getElementById("container");      
+      container.classList.add("right-panel-active");
+    }
+
+  </script>  
+  </body>
+</html>

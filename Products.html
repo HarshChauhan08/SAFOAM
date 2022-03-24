@@ -31,6 +31,10 @@
         .ImageHeight{
         height: calc(55vh - 30px) !important
         }
+
+        .border-1{
+            border-bottom: 1px solid #000;
+        }
     </style>
 </head>
 
@@ -205,7 +209,7 @@
     </div>
 
 
-    <section class="ftco-section">
+    <!-- <section class="ftco-section">
         <div class="container">
             <div class="row flex">
                 <div class="col-md-6 pl-md-5 ftco-animate">
@@ -272,6 +276,257 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row flex">
+                <div class="container text-center">
+                    <h2>PRODUCTS</h2>
+                    <div class="row">
+                        <div class="col-md-4 border-1" id="tab1" style="cursor: pointer;" onclick="HandleTab('1');">
+                            <h3 id="tabtext1">Weather Forecast</h3>
+                        </div>
+                        <div class="col-md-4 bg-dark" id="tab2" style="cursor: pointer;" onclick="HandleTab('2');">
+                            <h3 id="tabtext2" class="text-white">Satellite</h3>
+                        </div>
+                        <div class="col-md-4 bg-dark" id="tab3" style="cursor: pointer;" onclick="HandleTab('3');">
+                            <h3 id="tabtext3" class="text-white">Land Based</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="container" id="tabbox1" >
+                    <div class="row">
+                        <div class="col-md-10"></div>
+                        <div class="col align-self-end mt-3" style="text-align: end;">
+                            <select class="" style="height: 2rem; padding: 5px; width: 15rem; font-size: 18px;">
+                                <option>ALL</option>
+                                <option>Extreme Weather Forecast</option>
+                                <option>Flood Forecast</option>
+                            </select>
+                        </div>    
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12" style="text-align: center;">
+                            <img src="images/bg_7.jpg" style="width: 50rem;">
+                        </div>
+                        <div class="col-md-12" style="text-align: justify;">
+                            <div class="col align-self-center">
+                            <p style="text-align: justify;" class="mt-5">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12" style="text-align: center;">
+                            <img src="images/bg_7.jpg" style="width: 50rem;">
+                        </div>
+                        <div class="col-md-12" style="text-align: justify;">
+                            <div class="col align-self-center">
+                            <p style="text-align: justify;" class="mt-5">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12" style="text-align: center;">
+                            <img src="images/bg_7.jpg" style="width: 50rem;">
+                        </div>
+                        <div class="col-md-12" style="text-align: justify;">
+                            <div class="col align-self-center">
+                            <p style="text-align: justify;" class="mt-5">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container d-none" id="tabbox2" >
+                    <div class="row">
+                        <div class="col-md-10"></div>
+                        <div class="col align-self-end mt-3" style="text-align: end;">
+                            <select class="" style="height: 2rem; padding: 5px; width: 15rem; font-size: 18px;">
+                                <option>ALL</option>
+                                <option>NDVI</option>
+                                <option>VCI</option>
+                                <option>TCI</option>
+                                <option>RET</option>
+                                <option>INSU</option>
+                            </select>
+                        </div>    
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12" style="text-align: center;">
+                            <img src="images/bg_7.jpg" style="width: 50rem;">
+                        </div>
+                        <div class="col-md-12" style="text-align: justify;">
+                            <div class="col align-self-center">
+                            <p style="text-align: justify;" class="mt-5">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12" style="text-align: center;">
+                            <img src="images/bg_7.jpg" style="width: 50rem;">
+                        </div>
+                        <div class="col-md-12" style="text-align: justify;">
+                            <div class="col align-self-center">
+                            <p style="text-align: justify;" class="mt-5">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12" style="text-align: center;">
+                            <img src="images/bg_7.jpg" style="width: 50rem;">
+                        </div>
+                        <div class="col-md-12" style="text-align: justify;">
+                            <div class="col align-self-center">
+                            <p style="text-align: justify;" class="mt-5">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container d-none" id="tabbox3" >
+                    <div class="row">
+                        <div class="col-md-10"></div>
+                        <div class="col align-self-end mt-3" style="text-align: end;">
+                            <select class="" style="height: 2rem; padding: 5px; width: 15rem; font-size: 18px;">
+                                <option>ALL</option>
+                                <option>Distribution Weather Parameter</option>
+                                <option>Insolation</option>
+                                <option>SPI</option>
+                                <option>SPEI</option>
+                                <option>GDD</option>
+                            </select>
+                        </div>    
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12" style="text-align: center;">
+                            <img src="images/bg_7.jpg" style="width: 50rem;">
+                        </div>
+                        <div class="col-md-12" style="text-align: justify;">
+                            <div class="col align-self-center">
+                            <p style="text-align: justify;" class="mt-5">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12" style="text-align: center;">
+                            <img src="images/bg_7.jpg" style="width: 50rem;">
+                        </div>
+                        <div class="col-md-12" style="text-align: justify;">
+                            <div class="col align-self-center">
+                            <p style="text-align: justify;" class="mt-5">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12" style="text-align: center;">
+                            <img src="images/bg_7.jpg" style="width: 50rem;">
+                        </div>
+                        <div class="col-md-12" style="text-align: justify;">
+                            <div class="col align-self-center">
+                            <p style="text-align: justify;" class="mt-5">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="container" style="margin-top: 2rem;">
+                    <div class="row">
+                        <div class="col-sm">
+                            <h3>Weather Forecast</h3>
+                            <div class="container mt-3" style="margin-top: 2rem;">
+                                <div class="">
+                                    <div class="col-sm">
+                                        <h3>Normal Weather Forecast</h3>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h3>Flood Forecast</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <h3>Satellite</h3>
+                            <div class="container mt-3" style="margin-top: 2rem;">
+                                <div class="">
+                                    <div class="col-sm">
+                                        <h3>NDVI</h3>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h3>VCI</h3>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h3>TCI</h3>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h3>RET</h3>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h3>INSU</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <h3>Land Based</h3>
+                            <div class="container mt-3" style="margin-top: 2rem;">
+                                <div class="">
+                                    <div class="col-sm">
+                                        <h3>Weather Parameter</h3>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h3>Soil Moisture</h3>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h3>SPI</h3>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h3>SPEI</h3>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h3>GDD</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -385,6 +640,52 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+        function HandleTab(no)
+        {
+            if(no === "1")
+            {
+                $('#tab1').addClass('border-1').removeClass('bg-dark');
+                $('#tab2').addClass('bg-dark').removeClass('border-1');
+                $('#tab3').addClass('bg-dark').removeClass('border-1');
+
+                $('#tabtext1').removeClass('text-white');
+                $('#tabtext2').addClass('text-white');
+                $('#tabtext3').addClass('text-white');
+
+                $('#tabbox1').removeClass('d-none');
+                $('#tabbox2').addClass('d-none');
+                $('#tabbox3').addClass('d-none');                
+            }
+            else if(no === "2")
+            {
+                $('#tab2').addClass('border-1').removeClass('bg-dark');
+                $('#tab1').addClass('bg-dark').removeClass('border-1');
+                $('#tab3').addClass('bg-dark').removeClass('border-1');
+                $('#tabtext2').removeClass('text-white');
+                $('#tabtext1').addClass('text-white');
+                $('#tabtext3').addClass('text-white');
+
+                $('#tabbox2').removeClass('d-none');
+                $('#tabbox1').addClass('d-none');
+                $('#tabbox3').addClass('d-none');
+            }
+            else
+            {
+                $('#tab3').addClass('border-1').removeClass('bg-dark');
+                $('#tab1').addClass('bg-dark').removeClass('border-1');
+                $('#tab2').addClass('bg-dark').removeClass('border-1');
+
+                $('#tabtext3').removeClass('text-white');
+                $('#tabtext2').addClass('text-white');
+                $('#tabtext1').addClass('text-white');
+
+                $('#tabbox3').removeClass('d-none');
+                $('#tabbox2').addClass('d-none');
+                $('#tabbox1').addClass('d-none');
+            }
+        }
+    </script>
 
 </body>
 
